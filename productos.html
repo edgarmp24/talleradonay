@@ -1,0 +1,794 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Taller | Adonay Servicios</title>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="">
+<!--using FontAwesome---------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<style type="text/css">
+		
+		@charset "utf-8";
+		/* CSS Document */
+body{
+		background-color:#f6f5f5;
+		font-family:poppins;
+		margin:0px;
+		padding:0px;
+		}
+ul{
+		list-style:none;
+		}
+a{
+		text-decoration:none;
+		}
+
+nav {
+		display: flex;
+		justify-content: space-between;
+		align-items:center;
+		height:60px;
+		background-color:#fff;
+		box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+		padding:0px 5%;
+		
+		}
+nav ul{
+		display: flex;
+		}
+.toggle{
+		display: none;
+			}
+ 
+nav ul li a{
+		margin:30px;
+		font-family:myriad pro regular;
+		color:#505050;
+		font-size: 15px;
+		font-weight:700;
+		}
+
+button{
+		background-color:#0B0B0B;
+		color:#fff;	
+		border:none;
+		}
+	button:active{
+		transform:scale(1.1);
+		}
+
+.logo{
+		font-family:RoadTest;
+		color:red;
+		font-size: 22px;
+			}
+.active{
+		color:#000;
+		font-weight:bold;
+			}
+
+.model{
+			height:530px;
+			position:absolute;
+			bottom:40px;
+			left:75%;
+			transform: translateX(-75%);
+			}
+.text-container p:nth-child(1){
+			font-family: calibri;
+			font-weight:bold;
+			color:#fff;
+			font-size:22px;
+		}
+.text-container p:nth-child(2){
+		font-family:calibri;
+		font-weight:bold;
+		letter-spacing:1px;
+		color:#fff;
+		font-size:60px;
+	
+		}
+.text-container p:nth-child(3){
+		font-family: myriad pro regular;
+		color: #fff;
+		font-size:30px;
+		line-height:30px;
+		}
+ 
+.text-container p{
+		margin:45px 0px 25px;
+		line-height:0px;
+		}
+.text-container button{
+		width:130px;
+		height:42px;
+		border-radius:10px;
+		font-family:calibri;
+		font-weight:bold;
+		font-size: 14px;
+		outline:none;
+		margin:0px 10px;
+	
+		}
+.text-container{
+		position: absolute;
+		left:13%;
+		top:42%;
+		transform:translate(-13%,-42%);
+		}
+.hire-btn{
+		border:2px solid #fff;
+		color:#fff;
+		background-color:transparent;
+	
+		}
+
+.about-container{
+	width:80%;
+	height:330px;
+	background:#ffffff;
+	border-radius:20px;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: -7%  auto 20px auto;
+	position: relative;
+	justify-content:space-evenly;
+	align-items: center;
+}
+.about-container img{
+	height:250px;
+}
+.about-text{
+	width:500px;
+} 
+.about-text p:nth-child(1){
+	color:#403e3e;
+	font-family: myriad pro;
+	font-weight:bold;
+	font-size:23px;
+	line-height:0px;
+}
+.about-text p:nth-child(2){
+	color:#3e3d3d;
+	font-size:13px;
+	font-family: myriad pro;
+	font-weight:bold;
+	line-height:5px;
+}
+.about-text p:nth-child(3),.about-text p:nth-child(4){
+	color:#7e7d7d;
+	font-family:calibri;
+	font-size:16px;
+}
+.about-text button{
+	width:120px;
+	height: 40px;
+	color:#ffffff;
+	outline:none;
+	border:none;
+	font-family: calibri;
+	background-color:#262525;
+}
+
+
+.novedades{
+		height:auto;
+		background-color:;
+		padding: 2% 10% 0px 10%;
+		}
+.services-text p:nth-child(1){
+		font-family: calibri;
+		font-weight:bold;
+		color:#1d1c1c;
+		font-size:30px;
+		line-height:0px;
+	}
+.services-text p:nth-child(2){
+		font-family:calibri;
+		font-weight: bold;
+		color:#3e3d3d;
+		font-size: 20px;
+		line-height: 5px;
+		}
+.services-text p:nth-child(3){font-family:calibri;
+		color:#7e7d7d;
+		font-size: 20px;
+		}
+.services-text{
+		width: 90%;
+		margin:50px 0px;
+		}
+
+.box-container{
+		display:flex;
+		justify-content:space-between;
+		}
+
+.album{
+		display:flex;
+		justify-content:space-between;
+		background-color:;
+		}
+
+.album-1{
+		background-color: #fff;
+		border-radius: 15px;
+		width: 380px;
+		height:auto;
+		margin: 20px 30px;
+		color: #000;
+		padding-bottom: 20px;
+		padding-left: 10px;	
+		}
+.album-1 p{
+		padding-top: 0px;
+		padding-left: 10px;
+		}
+
+.box-1,.box-2,.box-3{
+		width: 700px;
+		height:520px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px;	
+		}
+ 
+.box-1{
+		background-image:url("images/services-1.jpg");
+			}
+.box-2{
+		background-image:url("images/services-3.jpg");
+		}
+.box-3{
+		background-image: url("images/services-2.jpg");
+		}
+.box-1 span,
+.box-2 span,
+.box-3 span{
+		width:80px;
+		height:50px;
+		border-radius:60%;
+		background-color:#ffffff;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		font-family: calibri;
+		font-weight: bold;
+		}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+		color:#FFFFFF;
+		font-family: calibri;
+		font-size: 30px;
+		line-height:0px;
+		}
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+		font-family: calibri;
+		color:#fff;
+		text-align:center;
+		width: 330px;
+		margin:0px 0px 20px 0px;
+		}
+.box-1 button,
+.box-2 button,
+.box-3 button{
+		width:100px;
+		height:30px;
+		background-color:#fff;
+		border:none;
+		outline: none;
+		border-radius:5px;
+		}
+
+
+.slider{
+		width: 100%;
+		height:360px;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-image: url("images/4.jpg");
+		display: flex;
+		box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 0px 0px;
+		}
+
+
+
+footer p{
+	font-family: calibri;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	font-weight:bold;
+	color:#191919;
+	line-height:10px;
+}
+footer p:nth-child(2){
+	font-size: 16px;
+	color:#7e7d7d;
+	width:600px;
+	text-align: center;
+}
+footer{
+	height:300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: #fff;
+}
+.social-icons a{
+	width:40px;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+}
+.social-icons{
+	display: flex;
+	
+}
+.social-icons i,.social i{
+	color:#000000;
+}
+.social-icons a:hover{
+	background-color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+ 
+.copyright{
+	color:#565555;
+	font-size: 12px;
+	position: absolute;
+	left:50%;
+	bottom:10px;
+	transform: translateX(-50%);
+}
+.social{
+	position: fixed;
+	top:50%;
+	right:0px;
+	transform:translateY(-50%);
+}
+.social a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50px;
+	height:50px;
+	margin:0px;
+	padding: 0px;
+	line-height:0px;
+	background-color:#FFFFFF;
+	border:1px solid #CBCBCB;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+	background-color:#000000;
+	transition:all ease 0.5s;
+}
+.social i{
+	font-size:20px;
+	color:#2B2B2B;
+}
+
+@media(max-width:1000px){
+	*{
+		box-sizing: border-box;
+	}
+.model{
+		height: 460px;
+		left: 90%;
+		transform: translateX(-90%);
+	}
+.text-container{
+		top:46%;
+	}
+.text-container button{
+		margin: 5px;
+	}
+
+.text-container p:nth-child(1){
+			font-family: calibri;
+			font-weight:bold;
+			color:#6d6d6d;
+			font-size:22px;
+		}
+.text-container p:nth-child(2){
+		font-family:calibri;
+		font-weight:bold;
+		letter-spacing:1px;
+		color:#1a1a1a;
+		font-size:60px;
+	
+		}
+.text-container p:nth-child(3){
+		font-family: myriad pro regular;
+		color: #403e3e;
+		font-size:30px;
+		line-height:30px;
+		}
+ 
+.text-container p{
+		margin:45px 0px 25px;
+		line-height:0px;
+		}
+.hire-btn{
+		border:2px solid #373636;
+		color:#373636;
+		background-color:transparent;
+	
+		}
+	.about-container{
+		width:90%;
+		border-radius: 10px;
+	}
+	.about-container img{
+		height: 200px;
+	}
+	.about-text{
+		width: 400px;
+	}
+	.about-text p:nth-child(1){
+		font-size: 20px;
+	}
+	.about-text p:nth-child(2){
+		font-size: 10px;
+	}
+	
+	.about-text p:nth-child(3),
+	.about-text p:nth-child(4){
+		font-size: 14px;
+	}
+	.novedades{
+		padding: 2% 5% 0px 5%;
+	}
+	.box-container{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.album{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.novedades{
+		height: auto;
+	}
+	.box-1,.box-2,.box-3{
+		flex-grow: 1;
+		margin: 10px;
+	}
+
+
+	.slider{
+		height: 200px;
+	}
+	
+}
+@media(max-width:750px){
+	
+	.model{
+		display: none;
+	}
+	.toggle{
+		display: block;
+	}
+	.text-container p:nth-child(2){
+		line-height: 40px;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	.text-container{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 80%;
+	}
+	nav ul{
+		margin: 0px;
+		padding: 0px;
+		background-color: #ebeef4;
+		flex-direction: column;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width:100%;
+		height: 100vh;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		display: none;
+		
+	}
+	nav ul li{
+		padding: 10px;
+	}
+	nav ul li a{
+		font-family: calibri;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		color:#5c5c5c;
+	}
+	nav ul li a:hover{
+		color:#121212;
+	}
+	.toggle:before{
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 30px;
+		z-index: 1;
+	}
+	.toggle.active:before{
+		content: '\f00d';
+		position: fixed;
+		right: 25px;
+		line-height: 0px;
+		
+	}
+	nav.active ul{
+		display: flex !important;
+	}
+	.about-container{
+		top: 0px;
+		flex-direction: column;
+		width:90%;
+		height: auto;
+		padding: 30px 0px;
+		align-items: center;
+	}
+	.about-text{
+		width:90%;
+		text-align: center;
+	}
+	.services-text{
+		width: 100%;
+	}
+	.slider{
+		height: 180px;
+	}
+	
+	footer p:nth-child(2){
+		width: 90%;
+	}
+	
+}
+
+	</style>
+	
+</head>
+<body>
+
+	<!--navigation------------------------->
+	<nav>
+	<!--logo-->
+	<a href="index.html" class="logo"><b>Taller Adonay</b></a>
+	<!--menu-->
+	<ul>
+	<li><a href="index.html" >Inicio</a></li>
+	<li><a href="servicios.html">Servicios</a></li>
+	<li><a href="#" class="active">Productos</a></li>
+	<li><a href="contacto.html">Contactenos</a></li>
+	<li><a href="chatapp/login.php">Login</a></li>
+	</ul>
+	<!--bars--------------->
+	<div class="toggle"></div>
+	
+	</nav>
+
+
+
+<div class="Novedades ">
+		<!--text-->
+
+	<div class="services-text ">
+	<p>Super Ofertas!!!</p>
+	<p>Motores</p>
+	<p>En Taller Adonay sabemos que para asegurar la disponibilidad operativa y productiva de los equipos, es fundamental contar con un suministro continuo y oportuno de repuestos originales.</p>
+
+	</div>
+
+
+		<div class="box-container">
+			<!--1------------->
+			
+				<img src="images/E40XMH.jpg" width="400px" height="520px">
+
+				<div class="box-1">
+
+					<span>YAMAHA</span>
+					<p class="heading">E40XMH</p>
+					<p class="details">Altura de espejo (pulgadas)	S: 16.7 - L: 21.70 - X: 25.6<br>
+					Dirección	Mando en popa<br>
+					Basculación	Mecánica<br>
+					Peso (aprox.)	72 kg<br>
+					Tipo de motor	L2, 2 tiempos<br>
+					Cilindrada	703 cc<br>
+					Calibre por carrera	80.0 x 70.0 mm<br>
+					Potencia de Salida kW (Hp)	29.4 (40) @ 5000 RPM<br>
+					Rango máximo de RPM de funcionamiento	4500 - 5500 RPM<br>
+					Relación de compresión	6.0<br>
+					Consumo máximo de combustible	20 l/h<br>
+					Sistema de inducción de combustible	1 Carb.<br>
+					Sistema de encendido	CDI<br>
+					Sistema de lubricación	Pre mezcla<br>
+					Arranque	Manual<br>
+					Relación de transmisión	2.0 (26/13)<br>
+					Palanca de cambio	F-N-R<br>
+					Sistema de escape	A través de la hélice
+					</p>
+				</div>
+			
+			
+		</div>
+		<br>
+
+
+</div>
+
+	<!--if you have any project in your mind contact me-->
+	
+		<center><h1>FUERABORDA  - 2 TIEMPOS -</h1></center>
+	<div class="album">
+
+				<div class="album-1">
+					<p >E75BMHD</p>
+					<img src="images/E75BMHD.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p >E60HMHD</p>
+					<img src="images/E60HMHD.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p >E40XMH</p>
+					<img src="images/E40XMH.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+			
+	</div>
+
+			<center><h1>FUERABORDA - 2 TIEMPOS -</h1></center>
+	<div class="album">
+
+				<div class="album-1">
+					<p >85AET</p>
+					<img src="images/85AET.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p >150AET</p>
+					<img src="images/150AET.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p >FT60GEHD 4 Tiempos</p>
+					<img src="images/FT60GEHD.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+			
+	</div>
+			<center><h1>MOTORES</h1></center>
+	<div class="album">
+
+				<div class="album-1">
+					<p > Motor MX200A2E</p>
+					<img src="images/MX200A2E.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p > Motor MX300A2E</p>
+					<img src="images/MX300A2E.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p > Motor MX400AA6A0</p>
+					<img src="images/MX400AA6A0.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+			
+	</div>
+
+	<center><h1>GENERADORES</h1></center>
+	<div class="album">
+
+				<div class="album-1">
+					<p > Motobomba YP30C</p>
+					<img src="images/YP30C.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p > Generador EF7200DE</p>
+					<img src="images/EF7200DE.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+
+				<div class="album-1">
+					<p > Generador EF2600FW</p>
+					<img src="images/EF2600FW.jpg" width="370px" height="350px">
+					<button>Detalles</button>
+				</div>
+			
+	</div>
+
+
+	<div class="slider">
+		
+	</div>	
+	 <!--footer--------------->
+ <footer>
+	 <!--heading-->
+  <p>Servicios Generales Adonay</p>
+	 <!--paragraph-->
+	 <p>Dirección: A-H Vicente Chunga Aldana Mz B Lote - Sechura - Piura - Perú.<br>
+	 Teléfono: 933 366 982 / 946 443 675 / 977724477<br>
+	 Email: talleradonay@gmail.com
+	</p>
+	 <!--social-->
+	<div class="social-icons">
+	<a href="#"><i class="fab fa-facebook-f"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-youtube"></i></a>
+	</div>
+	 <!--copyright-->
+	 <p class="copyright">Copyright by <a href="">Wisp Ebmp System</a></p>
+</footer>
+	<!--social-attach-bar-->
+	<div class="social">
+	<a href="#"><i class="fab fa-facebook-f"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-youtube"></i></a>
+	</div>
+
+
+	<!--JQUery-------------------->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+	
+</body>
+</html>
